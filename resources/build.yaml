@@ -1,0 +1,7 @@
+- task: JFrog.jfrog-artifactory.jfrog-artifactory-deployer-build-task.JFrogArtifactoryDeployer@2
+  displayName: JFrogArtifactoryDeployer 
+  inputs:
+    artifactoryEndpointName: '[% endpoint %]'
+    targetRepo: '[% target_repo %]'
+    contents: '[% contents_dir %]'
+
