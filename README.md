@@ -4,7 +4,7 @@ Sparrowdo module to generate VSTS yaml steps to publish contents to Artifactory.
 
     $ cat sparrowfile
 
-    # Builkd nuge6 package for project "CoollLib." located in $working-folder
+    # Publish directory "packages/" to Artifactory repository "local-nuget"
     module_run "VSTS::YAML::Artifactory::Publish", %(
       build-dir => "build",
       target-repo => "local-nuget", # Artifactory target repository 
